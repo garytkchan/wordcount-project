@@ -6,5 +6,5 @@ In the project directory, run:
 
 ### `python manage.py runserver`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:8000](http://localhost:3000) to view it in the browser.
+It runs the app in the development mode.<br>
+Open [localhost:8000](localhost:3000) to view it in the browser.
