@@ -7,9 +7,6 @@ def home(request):
     #return HttpResponse("Hello world!!")
     return render(request, 'home.html')
 
-def about(request):
-    return render(request, 'about.html')
-
 def count(request):
     # get and save input into fulltext
     fulltext = request.GET['fulltext']
