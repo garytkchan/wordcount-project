@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 {% load staticfiles %}
+
   <head>
     <title>Occurrances of Words</title>
 
@@ -10,12 +11,18 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/803167126a.js"></script>
 
+<style>
+.navbar {
+    padding-left: 330px;
+}
+</style>
+
 
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-        <a class="navbar-brand" href="{% url 'home' %}"><em>Word Count App</em></a>
+        <a class="navbar-brand" href="{% url 'home' %}"><em>Word Counter</em></a>
       </nav>
 </header>
 
@@ -24,7 +31,7 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <font color="gray"><h1 class="jumbotron-heading">Easily count the occurrances of each word</h1></font>
+      <font color="gray"><h1 class="jumbotron-heading">Easily count the recurrence of each word</h1></font>
       <p class="lead text-muted">Try it for free</p>
 
       <form action="{% url 'count' %}">
